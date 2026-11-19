@@ -45,7 +45,7 @@ Frontend-eigenen Schritte im Detail.
   `app.tracht-digital.de` (Kundenportal, für Login/SSO).
 - **GitHub PAT (classic)** mit `read:packages`, `write:packages`,
   `delete:packages`, `repo`, `workflow`, **SSO-autorisiert** für die Org
-  `Tracht-Digital-Solutions`. In den Repos als Secret **`PACKAGE_TOKEN`**.
+  `Tracht-Digital-Labs`. In den Repos als Secret **`PACKAGE_TOKEN`**.
 - **Alle Plattform-Pakete sind veröffentlicht** (Host + Extensions auf GitHub
   Packages). Falls nicht: erst die Extensions/den Host releasen (deren Release-
   Button), siehe Abschnitt „Extensions".
@@ -248,7 +248,7 @@ anderen Stack ist ein zweiter Build, kein zweites Deployment.
 
 Per CLI (manueller Redeploy):
 ```bash
-gh workflow run release.yml -R Tracht-Digital-Solutions/tds-admin-frontend
+gh workflow run release.yml -R Tracht-Digital-Labs/tds-admin-frontend
 ```
 
 ### 5.5 Den Prod-Host einrichten (Plesk, einmalig)
@@ -341,7 +341,7 @@ PHP-`Module`. Ein-/Ausbauen betrifft **zwei** Stellen (Frontend + Backend):
 1. **Frontend** (dieses Repo): das Manifest in `astro.config.mjs` `extensions[]`
    ergänzen **und** die passende Dependency in `package.json` (Caret auf die aktuelle Linie):
    ```js
-   import feature from "@tracht-digital-solutions/tds-ext-feature";
+   import feature from "@tracht-digital-labs/tds-ext-feature";
    const extensions = [ …, feature ];
    ```
 2. **Backend** (`tds-core-frontend-api`): `new FeatureModule()` in `src/Modules.php`

@@ -2,7 +2,7 @@
 
 The **admin frontend** product (`management.tracht-digital.de`). A standalone Astro
 app that composes the shared **core frontend host**
-(`@tracht-digital-solutions/tds-core-frontend`) with the **admin extension
+(`@tracht-digital-labs/tds-core-frontend`) with the **admin extension
 set**. Deployed from this repo's own `dev` / `release` branches.
 
 ## How it works

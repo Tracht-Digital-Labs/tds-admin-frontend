@@ -28,7 +28,7 @@ Adding or removing a feature: change the import, the `extensions` array and the 
 
 The host takes tds-shared as a peer. When it carried its own copy, npm nested a second
 version: the shell and the extensions ran different tds-shared versions (two toast hosts, two
-theme states). `npm ls @tracht-digital-solutions/tds-shared` must show exactly one version.
+theme states). `npm ls @tracht-digital-labs/tds-shared` must show exactly one version.
 
 ## Shell behaviour lives in the host and tds-shared
 

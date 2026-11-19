@@ -1,7 +1,7 @@
 # AGENTS.md — tds-admin-frontend
 
 The **admin frontend product** (`management.tracht-digital.de`). A standalone Astro app that
-composes the core frontend host (`@tracht-digital-solutions/tds-core-frontend`) with the
+composes the core frontend host (`@tracht-digital-labs/tds-core-frontend`) with the
 admin extension set, at build time, into one server-rendered Node application. This repo
 owns only the composition and the deploy pipeline; the shell, base pages and every feature
 live in published packages.
@@ -22,9 +22,9 @@ npm start                       # run release/app.cjs locally
 - **Never fork base UI into this repo.** Change the host or tds-shared, release, then repin here.
 - Adding an extension is three edits: the import, the `extensions` array and `dependencies`.
 - Keep each extension inside its pinned `0.MINOR.x` line; crossing it needs a dependency update here first.
-- `npm ls @tracht-digital-solutions/tds-shared` must show exactly one version.
+- `npm ls @tracht-digital-labs/tds-shared` must show exactly one version.
 - `frontendHost` keeps its `layout` option; `FRONTEND_TARGET=admin` stays on both env vars.
-- No page cache, ever. `vite.ssr.noExternal` covers `@tracht-digital-solutions/`.
+- No page cache, ever. `vite.ssr.noExternal` covers `@tracht-digital-labs/`.
 - `public/.htaccess` never gets `Options +FollowSymLinks`.
 - `tsconfig.json` keeps `release/` excluded.
 - Production deploys only via the manual `release.yml` button.

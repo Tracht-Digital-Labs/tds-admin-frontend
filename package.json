@@ -42,7 +42,7 @@
     "@tracht-digital-labs/tds-ext-tools": "^0.5.4",
     "@tracht-digital-labs/tds-ext-website-cms": "^0.5.1",
     "@tracht-digital-labs/tds-frontend-contract": "^1.14.0",
-    "@tracht-digital-labs/tds-shared": "^0.67.1",
+    "@tracht-digital-labs/tds-shared": "^0.68.2",
     "astro": "^7.2.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
